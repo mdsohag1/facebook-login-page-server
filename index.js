@@ -8,7 +8,7 @@ import adminRoute from "./routes/AdminRoute.js";
 
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 mongoose
    .connect(process.env.BD_URL)
